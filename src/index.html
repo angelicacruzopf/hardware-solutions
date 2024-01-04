@@ -79,38 +79,41 @@
             </button>
           </div>
           <div class="text-lg text-darkGray cursor-pointer">
+            
             <img src="./img/iconos/bars-bk.png" alt="Menú mobile" />
+
+            <div
+              id="menu"
+              class="checked:flex flex-col grow justify-center absolute top-[76px] right-[0] hidden"
+            >
+              <ul
+                class="navbar flex flex-col grow justify-evenly font-medium text-lighterGray text-center divide-y z-50 bg-white"
+              >
+                <li>
+                  <a href="#hero">Inicio</a>
+                </li>
+                <li>
+                  <a href="#products">Productos</a>
+                </li>
+                <li>
+                  <a href="#about">Sobre nosotros</a>
+                </li>
+                <li>
+                  <a href="#departamentos">Departamentos</a>
+                </li>
+                <li>
+                  <a href="#contacto">Contacto</a>
+                </li>
+                <li>
+                  <a href="#sucursales">Sucursales</a>
+                </li>
+                <li>
+                  <a href="#horarios">Horarios</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="flex flex-col grow justify-center absolute top-[76px] right-[0]"
-      >
-        <ul
-          class="navbar flex flex-col grow justify-evenly font-medium text-lighterGray text-center divide-y z-50 bg-white"
-        >
-          <li>
-            <a href="#hero">Inicio</a>
-          </li>
-          <li>
-            <a href="#products">Productos</a>
-          </li>
-          <li>
-            <a href="#about">Sobre nosotros</a>
-          </li>
-          <li>
-            <a href="#departamentos">Departamentos</a>
-          </li>
-          <li>
-            <a href="#contacto">Contacto</a>
-          </li>
-          <li>
-            <a href="#sucursales">Sucursales</a>
-          </li>
-          <li>
-            <a href="#horarios">Horarios</a>
-          </li>
-        </ul>
       </div>
     </nav>
 
@@ -141,9 +144,11 @@
         </div>
         <div class="w-full flex flex-col items-center">
           <div class="mb-6 w-full">
-            <h1 class="font-semibold text-2xl leading-6">
-              Hasta el<br />
-              <strong class="text-[64px] text-[#D62744]">70%</strong><br />
+            <h1 class="font-semibold text-2xl">
+              Hasta el
+              <br />
+              <strong class="text-[64px] text-[#D62744]">70%</strong>
+              <br />
               DE DESCUENTO
             </h1>
           </div>
