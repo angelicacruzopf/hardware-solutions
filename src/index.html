@@ -3,38 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./tailwind.css" rel="stylesheet" />
     <title>Hardware Solutions</title>
   </head>
   <body>
     <!-- FIXED NAV -->
 
     <nav
-      class="fixed-nav flex flex-row justify-between items-center text-sm bg-white fixed z-50 w-full shadow-md top-0"
+      class="hidden md:flex justify-between items-center text-sm bg-white fixed z-50 w-full shadow-md py-2 px-4"
     >
-      <div class="m-3 text-xs">
-        <img src="./img/hs-logo-full.svg" alt="Logo Hardware Solutions" />
+      <div class="h-10">
+        <img
+          src="./img/hs-logo-full.svg"
+          alt="Logo Hardware Solutions"
+          class="object-contain w-full h-full"
+        />
       </div>
-      <div class="flexflex-row grow justify-center max-w-[1000px]">
+      <div class="flex flex-row grow justify-center max-w-[1000px]">
         <ul
-          class="navbar flex flex-row grow justify-evenly font-medium text-lighterGray text-center sm:text-xs break-words lg:text-base gap-x-2 cursor-pointer"
+          class="flex flex-row grow justify-evenly font-medium text-lighterGray text-center sm:text-xs break-words lg:text-base gap-x-2 cursor-pointer"
         >
-          <li>
+          <li class="flex py-1 px-2 justify-center items-center hover:bg-[#00a48733] transition-all ease-in hover:p-2 rounded-full">
             <a href="#hero">Inicio</a>
           </li>
-          <li>
+          <li class="flex py-1 px-2 justify-center items-center hover:bg-[#00a48733] transition-all ease-in hover:p-2 rounded-full">
             <a href="#products">Productos</a>
           </li>
-          <li>
+          <li class="flex py-1 px-2 justify-center items-center hover:bg-[#00a48733] transition-all ease-in hover:p-2 rounded-full">
             <a href="#about">Sobre nosotros</a>
           </li>
-          <li>
+          <li class="flex py-1 px-2 justify-center items-center hover:bg-[#00a48733] transition-all ease-in hover:p-2 rounded-full">
             <a href="#departamentos">Departamentos</a>
           </li>
-          <li>
+          <li class="flex py-1 px-2 justify-center items-center hover:bg-[#00a48733] transition-all ease-in hover:p-2 rounded-full">
             <a href="#contacto">Contacto</a>
           </li>
-          <li>
+          <li class="flex py-1 px-2 justify-center items-center hover:bg-[#00a48733] transition-all ease-in hover:p-2 rounded-full">
             <a href="#sucursales">Sucursales </a>
           </li>
         </ul>
@@ -54,12 +58,12 @@
 
     <!-- MOBILE NAV -->
 
-    <nav class="md:hidden bg-white z-50 w-full shadow-md top-0 p-4 fixed">
-      <div class="flex flex-row items-center justify-between text-sm">
-        <div class="h-11 w-11">
+    <nav class="flex md:hidden bg-white z-50 w-full shadow-md top-0 p-4 fixed">
+      <div class="flex flex-row items-center justify-between text-sm w-full">
+        <div class="h-10 w-10">
           <img
             src="./img/hs-logo-icon.png"
-            class="object-cover w-full"
+            class="object-contain"
             alt="Logo ícono"
           />
         </div>
@@ -67,22 +71,17 @@
           <div>
             <button
               type="button"
-              class="m-3 bg-primary text-white py-2 px-4 rounded-full font-bold text-lg flex gap-2 items-center hover:bg-secondary transition-all ease-in sm:text-xs lg:text-base"
+              class="bg-primary text-white py-2 px-4 rounded-full font-bold text-lg flex gap-2 items-center hover:bg-secondary transition-all ease-in sm:text-xs lg:text-base"
             >
               <div>
-                <img
-                  src="./img/iconos/call-wt.png"
-                  alt="Ícono llamada"
-                  class="object-cover"
-                />
+                <img src="./img/iconos/call-wt.png" alt="Ícono llamada" />
               </div>
             </button>
           </div>
-          <div class="text-lg text-darkGray cursor-pointer">
-            
+          <button class="text-lg text-darkGray cursor-pointer hover:text-secondary focus:ring-2 focus:ring-secondary focus:text-secondary active:ring-2 active:ring-primary active:text-primary disabled:opacity-50">
             <img src="./img/iconos/bars-bk.png" alt="Menú mobile" />
 
-            <div
+            <button
               id="menu"
               class="checked:flex flex-col grow justify-center absolute top-[76px] right-[0] hidden"
             >
@@ -121,7 +120,7 @@
 
     <section>
       <div
-        class="w-full bg-darkGray text-white text-sm sm-banner py-2 absolute top-[85px] sm:top-[70pxs] md:top-[65px] z-30 flex items-center justify-center"
+        class="w-full bg-darkGray text-white text-sm sm-banner py-2 absolute top-10 z-30 flex items-center justify-center"
       >
         <p class="text-center">
           Obtén hasta el <strong>70%</strong> de <strong>descuento </strong> por
@@ -134,7 +133,7 @@
 
     <section
       id="hero"
-      class="h-full text-center flex flex-col items-center banner justify-between pt-8 md:pt-16"
+      class="h-full text-center flex flex-col items-center bg-hero-banner bg-center bg-cover justify-between pt-8 md:pt-16"
     >
       <div
         class="flex flex-col justify-between items-center w-[80%] md:w-2/3 max-w-[1000px] pt-32"
@@ -155,12 +154,18 @@
           <div
             class="flex flex-row items-center justify-center w-[80%] md:w-[40%] max-w-[342px]"
           >
+          <div class="flex flex-col gap-4">
+
             <button
               type="button"
               class="bg-darkGray text-white py-2 px-4 rounded-full font-bold text-lg flex gap-2 items-center justify-center w-full hover:bg-black transition-all ease-in"
             >
               Ver ofertas
             </button>
+
+            
+          </div>
+            
           </div>
         </div>
         <div>
@@ -651,9 +656,9 @@
         <div class="col-span-2 md:w-1/2 flex flex-col justify-between">
           <!-- FORMULARIO -->
 
-          <form class="flex flex-col gap-4 h-full text-neitralGray">
+          <form class="flex flex-col gap-4 h-full text-white">
             <div class="flex flex-col md:flex-row gap-4 w-full">
-              <div class="field md:w-1/2">
+              <div class="relative md:w-1/2">
                 <input
                   type="text"
                   name="firstName"
@@ -662,18 +667,19 @@
                   maxlength="32"
                   pattern="[A-Za-z\s]{1,32}"
                   title="Nombres"
-                  class="invalid:border-pink-500 invalid:text-pink-600"
+                  class="w-full h-12 bg-white p-2 rounded-lg text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                  placeholder="Nombres"
                 />
                 <label
                   htmlFor="firstName"
                   title="Nombres"
                   data-title="Nombres"
                 ></label>
-                <span class="error">
+                <span class="inline-block">
                   Este campo no puede estar vacío, e.g. John
                 </span>
               </div>
-              <div class="field md:w-1/2">
+              <div class="relative md:w-1/2">
                 <input
                   type="text"
                   name="lastName"
@@ -681,64 +687,63 @@
                   maxlength="32"
                   pattern="[A-Za-z]{1,32}"
                   required
-                  class="invalid:border-pink-500 invalid:text-pink-600"
+                  class="w-full h-12 bg-white p-4 rounded-lg text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                  placeholder="Apellidos"
                 />
                 <label
                   htmlFor="lastName"
                   title="Apellidos"
                   data-title="Apellidos"
                 ></label>
-                <span class="error"
+                <span class="inline-block"
                   >Este campo no puede estar vacío, e.g. Doe</span
                 >
               </div>
             </div>
 
-            <div class="col-span-2 field">
+            <div class="col-span-2 relative">
               <input
                 type="email"
                 name="email"
                 id="email"
-                class="invalid:border-pink-500 invalid:text-pink-600"
+                class="w-full h-12 bg-white p-4 rounded-lg text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                 required
+                placeholder="Correo electrónico"
               />
               <label
                 htmlFor="email"
                 title="Correo electrónico"
                 data-title="Correo electrónico"
-                class="peer-invalid:text-pink-600"
               ></label>
-              <span class="error">
+              <span class="inline-block">
                 Este campo no puede estar vacío, e.g. correo@ejemplo.com
               </span>
             </div>
 
-            <div class="col-span-2 field">
+            <div class="col-span-2 relative">
               <input
                 type="tel"
                 name="phone"
                 id="phone"
-                class="focus:invalid:border-pink-500 invalid:text-pink-600"
+                class="w-full h-12 bg-white p-4 rounded-lg text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
                 pattern="^\+[1-9]{1}[0-9]{3,14}$"
                 required
+                placeholder="Número telefónico"
               />
 
-              <label
-                htmlFor="phone"
-                title="Número telefónico"
-                data-title="Número telefónico"
-              ></label>
-              <span class="error">
+              <label htmlFor="phone" title="phone" data-title="phone"></label>
+              <span class="inline-block">
                 Este campo no puede estar vacío, e.g. +27 123 4567
               </span>
             </div>
-            <div class="col-span-2 row-span-6 h-full field">
+            <div class="col-span-2 row-span-6 h-full relative">
               <textarea
                 name="message"
                 id="message"
                 required
-                class="h-full placeholder:pt-2 focus:invalid:border-pink-500 invalid:text-pink-600"
+                class="w-full h-32 bg-white p-4 rounded-lg resize-none invalid:border-pink-500 text-mediumGray invalid:text-pink-600"
+                placeholder="Escribe un mensaje"
               ></textarea>
 
               <label
