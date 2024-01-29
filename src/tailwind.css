@@ -1217,6 +1217,11 @@ video {
   color: rgb(14 69 47 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -1235,10 +1240,6 @@ video {
   background-color: rgb(14 69 47 / var(--tw-bg-opacity));
 }
 
-.focus\:bg-white\/0:focus {
-  background-color: rgb(255 255 255 / 0);
-}
-
 .focus\:bg-white\/50:focus {
   background-color: rgb(255 255 255 / 0.5);
 }
@@ -1246,6 +1247,11 @@ video {
 .focus\:text-secondary:focus {
   --tw-text-opacity: 1;
   color: rgb(14 69 47 / var(--tw-text-opacity));
+}
+
+.focus\:text-white:focus {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .focus\:ring-2:focus {
