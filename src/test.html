@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="./tailwind.css" rel="stylesheet" />
 </head>
-<body class="flex justify-center">
+<body class="flex justify-center flex-col items-center">
 
   <div class="flex flex-col items-center justify-center gap-8 w-[90%] py-16">
     <button class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-primary hover:bg-secondary focus:ring-4 focus:bg-secondary focus:ring-secondary/50 active:bg-primary active:ring-4 active:ring-primary/50 disabled:bg-opacity-50">
@@ -37,5 +37,30 @@
     </button>
   </div>
     
+
+  <h2>Menu mobile</h2>
+
+   <div id="menu" class="shadow border flex flex-col justify-center my-16">
+                <ul class=" flex flex-col justify-evenly font-medium text-lighterGray text-center divide-y z-50 bg-white cursor-pointer ">
+                    <a href="#hero" class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50">
+                        Inicio
+                    </a>
+                    <a href="#about" class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50">
+                        Sobre nosotros
+                    </a>
+                    <a href="#servicios" class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50">
+                        Servicios
+                    </a>
+                    <a href="#contacto" class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50">
+                        Contacto
+                    </a>
+                    <a href="#sucursales" class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50">
+                        Ubicacion
+                    </a>
+                    <a href="#horarios" class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50">
+                        Horarios
+                    </a>
+                </ul>
+            </div>
 </body>
 </html>
