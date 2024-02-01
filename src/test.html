@@ -1,41 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./tailwind.css" rel="stylesheet" />
-</head>
-<body class="flex justify-center">
+  </head>
+  <body class="flex justify-center flex-col items-center">
+    <div class="flex flex-col items-center justify-center gap-8 w-[90%] py-16">
+      <button
+        class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-primary hover:bg-secondary focus:ring-4 focus:bg-secondary focus:ring-secondary/50 active:bg-primary active:ring-4 active:ring-primary/50 disabled:bg-opacity-50"
+      >
+        Flat button
+      </button>
 
-  <div class="flex flex-col items-center justify-center gap-8 w-[90%] py-16">
-    <button class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-primary hover:bg-secondary focus:ring-4 focus:bg-secondary focus:ring-secondary/50 active:bg-primary active:ring-4 active:ring-primary/50 disabled:bg-opacity-50">
-      Flat button
-    </button>
+      <button
+        class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-primary hover:bg-secondary focus:ring-4 focus:bg-secondary focus:ring-secondary/50 active:bg-opacity-0 active:ring-4 active:ring-primary/50 active:text-primary disabled:bg-opacity-50"
+      >
+        Flat button dark
+      </button>
 
-    <button class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-primary hover:bg-secondary focus:ring-4 focus:bg-secondary focus:ring-secondary/50 active:bg-opacity-0 active:ring-4 active:ring-primary/50 disabled:bg-opacity-50">
-      Flat button dark
-    </button>
-
-    <button class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-primary hover:bg-primary/50 focus:ring-4 focus:bg-primary focus:ring-primary/50 active:bg-opacity-0 active:ring-4 active:ring-primary/50 disabled:bg-opacity-50">
+    <button class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-blue-500 hover:bg-blue-500/50 focus:ring-4 focus:bg-blue-500 focus:ring-blue-500/50 active:bg-opacity-0 active:ring-4 active:ring-blue-500/50 disabled:bg-opacity-50">
       Flat button dark 2
     </button>
 
-    <button class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-black md:bg-white md:text-black hover:bg-secondary md:hover:text-white focus:ring-4 focus:bg-secondary focus:ring-secondary/50 md:focus:text-white active:bg-black active:ring-4 active:ring-black/50 md:active:ring-white/50 md:active:bg-white md:active:text-black disabled:bg-opacity-50">
-      Flat button dark 3
-    </button>
+      <button
+        class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-black md:bg-white md:text-black hover:bg-secondary md:hover:text-white focus:ring-4 focus:bg-secondary focus:ring-secondary/50 md:focus:text-white active:bg-black active:ring-4 active:ring-black/50 md:active:ring-white/50 md:active:bg-white md:active:text-black disabled:bg-opacity-50"
+      >
+        Flat button dark 3
+      </button>
 
-    <div class="bg-black p-4 w-full">
-      <button class="w-full py-2 px-4 text-primary rounded-full text-nowrap bg-white hover:bg-white/50 hover:text-white focus:ring-4 focus:bg-white/50 focus:ring-white focus:text-white active:bg-white active:ring-4 active:ring-white/50 active:text-primary disabled:bg-opacity-50">
-        Flat button dark white
+      <button
+        class="w-full py-2 px-4 text-white rounded-full text-nowrap bg-black hover:bg-secondary focus:ring-4 focus:bg-secondary focus:ring-secondary/50 active:bg-black active:ring-4 active:ring-black/50 disabled:bg-opacity-50"
+      >
+        Flat button dark 4
+      </button>
+
+      <div class="bg-black p-4 w-full">
+        <button
+          class="w-full py-2 px-4 text-primary rounded-full text-nowrap bg-white hover:bg-white/50 hover:text-white focus:ring-4 focus:bg-white/50 focus:ring-white focus:text-white active:bg-white active:ring-4 active:ring-white/50 active:text-primary disabled:bg-opacity-50"
+        >
+          Flat button dark white
+        </button>
+      </div>
+
+      <button
+        class="w-full py-2 px-4 rounded-full text-primary hover:text-secondary focus:ring-2 focus:ring-secondary focus:text-secondary active:ring-2 active:ring-primary active:text-primary disabled:opacity-50"
+      >
+        Text button
       </button>
     </div>
-    
 
-    <button class="w-full rounded-full text-primary hover:text-secondary focus:ring-2 focus:ring-secondary focus:text-secondary active:ring-2 active:ring-primary active:text-primary disabled:opacity-50">
-      Text button
-    </button>
-  </div>
-    
-</body>
+    <h2>Menu mobile</h2>
+
+    <div id="menu" class="shadow border flex flex-col justify-center my-16">
+      <ul
+        class="flex flex-col justify-evenly font-medium text-lighterGray text-center divide-y z-50 bg-white cursor-pointer"
+      >
+        <a
+          href="#hero"
+          class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50"
+        >
+          Inicio
+        </a>
+        <a
+          href="#about"
+          class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50"
+        >
+          Sobre nosotros
+        </a>
+        <a
+          href="#servicios"
+          class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50"
+        >
+          Servicios
+        </a>
+        <a
+          href="#contacto"
+          class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50"
+        >
+          Contacto
+        </a>
+        <a
+          href="#sucursales"
+          class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50"
+        >
+          Ubicacion
+        </a>
+        <a
+          href="#horarios"
+          class="py-2 px-8 flex justify-center items-center hover:bg-fourth hover:bg-opacity-50"
+        >
+          Horarios
+        </a>
+      </ul>
+    </div>
+
+    <h2>FIXED NAV</h2>
+    <nav
+      class="flex flex-row justify-between items-center text-sm bg-darkGray py-2 px-4 z-50 w-full gap-4 shadow-md my-16"
+    >
+      <div class="h-10">
+        <img
+          src="./img/hs-logo-icon.png"
+          alt="Logo Triple-I"
+          class="object-fit w-full h-full"
+        />
+      </div>
+      <div class="flex flex-row grow justify-center max-w-[1000px]">
+        <ul
+          class="flex flex-row grow justify-center gap-2 md:gap-6 font-normal text-center text-white cursor-pointer items-center lg:text-base"
+        >
+          <li >
+            <a class="hover:underline hover:text-primary transition-all ease-in focus:text-third focus:underline" href="#hero">Home</a>
+          </li>
+          <li >
+            <a class="hover:underline hover:text-primary transition-all ease-in focus:text-third focus:underline" href="#about">About Us</a>
+          </li>
+          <li >
+            <a class="hover:underline hover:text-primary transition-all ease-in focus:text-third focus:underline" href="#departamentos">Cargo carried</a>
+          </li>
+
+          <li >
+            <a class="hover:underline hover:text-primary transition-all ease-in focus:text-third focus:underline" href="#contacto">Contact</a>
+          </li>
+          <li >
+            <a class="hover:underline hover:text-primary transition-all ease-in focus:text-third focus:underline" href="#sucursales">Location</a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-ful min-w-32">
+        <button
+          type="button"
+          class="bg-primary text-white py-2 px-4 font-bold text-lg flex gap-2 items-center sm:text-xs lg:text-base w-full hover:bg-darkGray hover:border-2 hover:border-primary transition-all ease-in"
+        >
+          <div>
+            <img src="./img/iconos/call-wt.png" alt="Ícono llamada" class="" />
+          </div>
+          <span class="text-nowrap">(939) 252 4501</span>
+        </button>
+      </div>
+    </nav>
+  </body>
 </html>
